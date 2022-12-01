@@ -1,6 +1,7 @@
 #include <iostream>
+#include "1/1.h"
 
 int main()
 {
-	std::cout << "hello\n";
+	Day1::main();
 }
