@@ -3,4 +3,4 @@
 #include <memory>
 #include <vector>
 
-std::unique_ptr<std::vector<std::vector<int>>> readInts();
+std::vector<std::vector<int>> readInts();

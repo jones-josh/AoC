@@ -9,10 +9,10 @@
 
 void Day1::main()
 {
-	auto nums = readInts();
+	std::vector<std::vector<int>> nums = readInts();
 
 	std::vector<int> sums;
-	for (auto v : *nums){
+	for (auto v : nums){
 		sums.push_back(std::reduce(v.begin(), v.end()));
 	}
 

@@ -3,24 +3,23 @@
 #include <memory>
 #include <string>
 
-std::unique_ptr<std::vector<std::vector<int>>> readInts()
+std::vector<std::vector<int>> readInts()
 {
 	std::string prev = "";
 	std::string cur;
 
-	auto nums = std::make_unique<std::vector<std::vector<int>>>();
-	nums->push_back({});
+	std::vector<std::vector<int>> nums{ {} };
 	std::getline(std::cin, cur);
 
 	while (cur != "" || prev != "") {
 		if (cur == "") {
-			nums->push_back({});
+			nums.push_back({});
 		}
-		else nums->at(nums->size() - 1).push_back(std::stoi(cur));
+		else nums.at(nums.size() - 1).push_back(std::stoi(cur));
 		prev = cur;
 		std::getline(std::cin, cur);
 	}
 
-	nums->pop_back();
+	nums.pop_back();
 	return nums;
 }
