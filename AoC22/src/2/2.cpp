@@ -3,7 +3,8 @@
 #include <string>
 #include <iostream>
 
-void part1() {
+void Day2::part1()
+{
 	std::string opp;
 	int score = 0;
 	int handScores[3] = { 1, 2, 3 };
@@ -25,7 +26,8 @@ void part1() {
 	std::cout << score << std::endl;
 }
 
-void part2() {
+void Day2::part2()
+{
 	std::string opp;
 	int score = 0;
 	int handScores[3] = { 1, 2, 3 };
