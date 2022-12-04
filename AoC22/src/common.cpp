@@ -2,6 +2,7 @@
 #include <iostream>
 #include <memory>
 #include <string>
+#include <unordered_set>
 
 std::vector<std::vector<int>> readInts()
 {
@@ -22,4 +23,25 @@ std::vector<std::vector<int>> readInts()
 
 	nums.pop_back();
 	return nums;
+}
+
+std::vector<std::string> split(std::string s, std::string delims)
+{
+	std::unordered_set<char> delimsSet;
+	for (char d : delims) delimsSet.insert(d);
+
+	std::vector<std::string> v;
+	std::string current = "";
+	for (char c : s) {
+		if (delimsSet.contains(c)) {
+			v.push_back(current);
+			current = "";
+		}
+		else {
+			current += c;
+		}
+	}
+	v.push_back(current);
+
+	return v;
 }
