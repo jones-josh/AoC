@@ -45,3 +45,8 @@ std::vector<std::string> split(std::string s, std::string delims)
 
 	return v;
 }
+
+bool isSubString(const std::string& str, const std::string& sub)
+{
+	return str.size() > sub.size() && str.find(sub) == 0;
+}

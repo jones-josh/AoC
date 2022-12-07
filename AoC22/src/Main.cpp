@@ -1,6 +1,6 @@
-#include "5/5.h"
+#include "7/7.h"
 
 int main()
 {
-	Day5::main();
+	Day7::main();
 }
