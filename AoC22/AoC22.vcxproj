@@ -26,6 +26,7 @@
     <ClCompile Include="src\4\4.cpp" />
     <ClCompile Include="src\5\5.cpp" />
     <ClCompile Include="src\6\6.cpp" />
+    <ClCompile Include="src\8\8.cpp" />
     <ClCompile Include="src\common.cpp" />
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
@@ -37,6 +38,7 @@
     <ClInclude Include="src\4\4.h" />
     <ClInclude Include="src\5\5.h" />
     <ClInclude Include="src\6\6.h" />
+    <ClInclude Include="src\8\8.h" />
     <ClInclude Include="src\common.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
