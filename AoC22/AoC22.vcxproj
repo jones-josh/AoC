@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\10\10.cpp" />
     <ClCompile Include="src\7\7.cpp" />
     <ClCompile Include="src\1\1.cpp" />
     <ClCompile Include="src\2\2.cpp" />
@@ -27,10 +28,12 @@
     <ClCompile Include="src\5\5.cpp" />
     <ClCompile Include="src\6\6.cpp" />
     <ClCompile Include="src\8\8.cpp" />
+    <ClCompile Include="src\9\9.cpp" />
     <ClCompile Include="src\common.cpp" />
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\10\10.h" />
     <ClInclude Include="src\7\7.h" />
     <ClInclude Include="src\1\1.h" />
     <ClInclude Include="src\2\2.h" />
@@ -39,6 +42,7 @@
     <ClInclude Include="src\5\5.h" />
     <ClInclude Include="src\6\6.h" />
     <ClInclude Include="src\8\8.h" />
+    <ClInclude Include="src\9\9.h" />
     <ClInclude Include="src\common.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
