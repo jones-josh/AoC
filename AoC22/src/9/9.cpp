@@ -94,7 +94,7 @@ void Day9::part2()
 	std::set<std::pair<int, int>> tailVisited;
 	tailVisited.emplace(0, 0);
 
-	printRope(26, 21, 11, 5, headX, headY, tailXs, tailYs);
+	//printRope(26, 21, 11, 5, headX, headY, tailXs, tailYs);
 
 	while (s != "q")
 	{
@@ -118,7 +118,11 @@ void Day9::part2()
 			for (int j = 0; j < 9; ++j) {
 				int x = hx - tailXs[j];
 				int y = hy - tailYs[j];
-				if (std::abs(x) == 2) {
+				if (std::abs(x) == 2 && std::abs(y) == 2) {
+					tailXs[j] += x / 2;
+					tailYs[j] += y / 2;
+				}
+				else if (std::abs(x) == 2) {
 					tailXs[j] += x / 2;
 					tailYs[j] += y;
 				}
@@ -129,16 +133,13 @@ void Day9::part2()
 				hx = tailXs[j];
 				hy = tailYs[j];
 			}
-				
 			tailVisited.emplace(tailXs[8], tailYs[8]);
 		}
-
+		//printRope(26, 21, 11, 5, headX, headY, tailXs, tailYs);
 		std::cin >> s;
-		printRope(26, 21, 11, 5, headX, headY, tailXs, tailYs);
 	}
-
-	printRope(26, 21, 11, 5, headX, headY, tailXs, tailYs);
-	printVisited(26, 21, 11, 5, tailVisited);
+	//printRope(26, 21, 11, 5, headX, headY, tailXs, tailYs);
+	//printVisited(26, 21, 11, 5, tailVisited);
 	std::cout << tailVisited.size() << std::endl;
 
 }
